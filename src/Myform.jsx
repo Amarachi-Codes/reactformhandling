@@ -60,7 +60,7 @@ const Myform = () => {
             <label htmlFor="password">Password</label><br />
             <input 
             id='password' 
-            type="text" 
+            type="password" 
             name="password"
             placeholder='Enter Email'
             value={formik.values.password}
@@ -73,7 +73,7 @@ const Myform = () => {
             <label htmlFor="confirmpassword">Confirm Password</label><br />
             <input 
             id='confirmpassword' 
-            type="text"  
+            type="password"  
             name="confirmpassword"
             placeholder='Confirm your password'
             value={formik.values.confirmpassword}
