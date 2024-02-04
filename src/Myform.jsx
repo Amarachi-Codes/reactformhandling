@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Myform = () => {
   return (
@@ -11,6 +11,14 @@ const Myform = () => {
         <div>
             <label htmlFor="email">Email</label>
             <input id='email' type="email" className="email" />
+        </div>
+        <div>
+            <label htmlFor="password">Password</label>
+            <input id='password' type="text" className="password" />
+        </div>
+        <div>
+            <label htmlFor="confirmpassword">Confirm Password</label>
+            <input id='confirmpassword' type="text"  />
         </div>
       </form>
     </div>
