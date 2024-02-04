@@ -1,6 +1,7 @@
 import React from 'react';
 import { useFormik } from 'formik';
 import * as Yup from "yup";
+import "./myform.css";
 
 const Myform = () => {
   const formik = useFormik({
@@ -31,7 +32,7 @@ const Myform = () => {
   return (
     <div>
       <form onSubmit={formik.handleSubmit}>
-        <div>
+        <div className='container'>
             <label htmlFor="username">Username</label><br />
             <input 
             id='username' 
@@ -44,7 +45,7 @@ const Myform = () => {
              />
              <p>{formik.errors.username && formik.touched && formik.errors.username}</p>
         </div>
-        <div>
+        <div className='container'>
             <label htmlFor="email">Email</label><br />
             <input id='email'
              type="email" 
@@ -56,7 +57,7 @@ const Myform = () => {
              />
              <p>{formik.errors.email && formik.touched && formik.errors.email}</p>
         </div>
-        <div>
+        <div className='container'>
             <label htmlFor="password">Password</label><br />
             <input 
             id='password' 
@@ -69,7 +70,7 @@ const Myform = () => {
              />
             <p>{formik.errors.password && formik.touched && formik.errors.password}</p>
         </div>
-        <div>
+        <div className='container'>
             <label htmlFor="confirmpassword">Confirm Password</label><br />
             <input 
             id='confirmpassword' 
@@ -84,7 +85,7 @@ const Myform = () => {
         </div>
         <div>
             <button>Claim your free trial</button>
-            <p>By clicking this button, you are agreeing to our<span>Terms and Conditions</span></p>
+            <p>By clicking this button, you are agreeing to our <span>Terms and Conditions</span></p>
         </div>
       </form>
     </div>
