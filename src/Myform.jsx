@@ -71,7 +71,16 @@ const Myform = () => {
         </div>
         <div>
             <label htmlFor="confirmpassword">Confirm Password</label><br />
-            <input id='confirmpassword' type="text"  />
+            <input 
+            id='confirmpassword' 
+            type="text"  
+            name="confirmpassword"
+            placeholder='Confirm your password'
+            value={formik.values.confirmpassword}
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur} 
+            />
+            <p>{formik.errors.confirmpassword && formik.touched && formik.errors.confirmpassword}</p>
         </div>
         <div>
             <button>Claim your free trial</button>
